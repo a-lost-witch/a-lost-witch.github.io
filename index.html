@@ -46,11 +46,48 @@ padding:20px;
 border-top:1px solid #c2a878;
 margin-top:40px;
 }
+
+/* ✨ Stars */
+.star{
+position: fixed;
+width: 8px;
+height: 8px;
+background: #c2a878;
+border-radius: 50%;
+box-shadow: 0 0 10px #c2a878, 0 0 20px #c2a878;
+animation: blink 2s infinite ease-in-out;
+}
+
+/* Left corner star*/
+.left{
+top: 20px;
+left: 20px;
+}
+
+/* Right corner star*/
+.right{
+top: 20px;
+right: 20px;
+}
+
+/* Blinking animation */
+@keyframes blink{
+0%, 100%{
+opacity: 0;
+transform: scale(0.5);
+}
+50%{
+opacity: 1;
+transform: scale(1.2);
+}
+}  
 </style>
 
 </head>
 
 <body>
+<div class="star left"></div>
+<div class="star right"></div>
 
 <header>
 <h1>Lost Library</h1>
