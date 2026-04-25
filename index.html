@@ -70,6 +70,38 @@ left: 40px;
 top: 70px;
 right: 40px;
 }
+        
+/* Cards*/
+details{
+margin: 10px 0;
+padding: 10px;
+border: 1px solid #3a3a3a;
+background: #1a1612;
+cursor: pointer;
+}
+
+summary{
+color: #c2a878;
+font-weight: bold;
+font-size: 16px;
+}
+
+details p{
+margin-top: 8px;
+color: #e8dcc0;
+line-height: 1.6;
+}
+
+/* Remove default arrow */
+summary::-webkit-details-marker {
+display: none;
+}
+
+/* Custom star symbol */
+summary::before{
+content: "✦ ";
+color: #c2a878;
+}        
 </style>
 
 </head>
@@ -87,15 +119,22 @@ right: 40px;
 
 <h2>📚 Books</h2>
 <div class="card">
-<p>The Secret History by Donna Tartt</p>
-<p>If We Were Villains by M.L. Rio</p>
-<p>Harry Potter by JK Rowling</p>
-<p>Inheritance Games by Jennifer Barnes</p>
-<p>Picture of Dorian Gray by Oscal Wilde</p>
-<p>If We Were Villains by M. L. Rio</p>
-<p>The Atlas Six by Olivie Blake</p>
-<p>Edgar Allan Poe Story Collection</p>
-<p>A Good Girl's Guide to Murder by Holly Jackson</p>
+
+<details>
+  <summary>The Secret History – Donna Tartt</summary>
+  <p>A group of elite students and a mysterious professor become entangled in murder and obsession.</p>
+</details>
+
+<details>
+  <summary>If We Were Villains – M.L. Rio</summary>
+  <p>Shakespearean drama students get caught in a real-life tragedy.</p>
+</details>
+
+<details>
+  <summary>Picture of Dorian Gray – Oscar Wilde</summary>
+  <p>A man remains young while his portrait ages, reflecting his sins.</p>
+</details>
+
 </div>
 
 <h2>🎬 Movies</h2>
@@ -130,6 +169,7 @@ right: 40px;
 </div>
 
 <h2>📺 Series</h2>
+<div class="card">
 <p>Wednesday</p>
 <p>A Discovery of Witches</p>
 <p>Chilling Adventures of Sabrina</p>
@@ -137,6 +177,7 @@ right: 40px;
 <p>Dark (German)</p>
 <p>Elite (Spanish)</p>
 <p>The Boarding School: Las Cumbres (Spanish)</p>
+</div>
 
 <h2>📔 Manhwa</h2>
 <div class="card">
