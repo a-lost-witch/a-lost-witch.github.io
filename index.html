@@ -2,7 +2,6 @@
 <html>
 <head>
 <title>Lost Library</title>
-/* making it mobile friendly*/
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -73,6 +72,44 @@ left: 40px;
 top: 70px;
 right: 40px;
 }
+
+/* 📱 Mobile optimization */
+@media (max-width: 768px){
+
+header{
+padding:40px 10px;
+}
+
+h1{
+font-size:32px;
+}
+
+section{
+padding:20px;
+}
+
+.card{
+padding:15px;
+margin:15px 0;
+}
+
+/* Smaller candles */
+.candles{
+width:100px;
+}
+
+/* Adjust candle position */
+.left{
+top: 50px;
+left: 10px;
+}
+
+.right{
+top: 50px;
+right: 10px;
+}
+
+        }
         
 /* Cards*/
 details{
